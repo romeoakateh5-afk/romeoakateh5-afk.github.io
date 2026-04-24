@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Romeo Akateh Alemnkia - Software Engineering Student" />
+  <title>Projects | Romeo Akateh Alemnkia</title>
+  
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  
+  <!-- External Stylesheet (same as main portfolio) -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">Romeo<span class="accent">.</span>dev</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#certifications">Certifications</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="Resume.pdf" class="nav-cta">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== PROJECTS HEADER ===================== -->
+    <section class="hero" style="min-height: 60vh;">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      
+      <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+        <div class="hero-text">
+          <p class="hero-label">Portfolio</p>
+          <h1 class="hero-name" style="font-size: clamp(2.5rem, 4vw, 3.5rem);">My Projects</h1>
+          <p class="hero-tagline">A showcase of my work and learning journey</p>
+        </div>
+      </div>
+      
+      <div class="hero-divider" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section class="section-pad" style="background: var(--color-bg-secondary);">
+      <div class="container">
+        <div class="section-label">Featured Work</div>
+        <h2 class="section-title">Recent Projects</h2>
+        
+        <!-- Projects Grid -->
+        <div class="cert-grid">
+          
+          <!-- Project 1: Portfolio Website -->
+          <article class="cert-card">
+            <div class="cert-body" style="width: 100%;">
+              <h4 class="cert-title">Personal Portfolio Website</h4>
+              <p class="cert-issuer" style="margin-bottom: 0.75rem;">HTML5, CSS3, Responsive Design</p>
+              <p style="font-size: 0.9375rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                A modern, responsive portfolio website showcasing my skills, projects, and certifications. 
+                Features a sophisticated dark theme with custom animations and accessibility features.
+              </p>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <a href="index.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                  View Live
+                </a>
+                <a href="https://github.com/ROMEO-AKATEH/portfolio" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;" target="_blank" rel="noopener">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: C Programming Projects -->
+          <article class="cert-card">
+            <div class="cert-body" style="width: 100%;">
+              <h4 class="cert-title">C Programming Exercises</h4>
+              <p class="cert-issuer" style="margin-bottom: 0.75rem;">C Language, Algorithms, Problem Solving</p>
+              <p style="font-size: 0.9375rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                Collection of C programming exercises from my coursework covering variables, control flow, 
+                functions, pointers, and data structures. Demonstrates fundamental programming concepts.
+              </p>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <a href="https://github.com/ROMEO-AKATEH/c-programming" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;" target="_blank" rel="noopener">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Web Development Study Projects -->
+          <article class="cert-card">
+            <div class="cert-body" style="width: 100%;">
+              <h4 class="cert-title">Web Development Studies</h4>
+              <p class="cert-issuer" style="margin-bottom: 0.75rem;">HTML, CSS, JavaScript Basics</p>
+              <p style="font-size: 0.9375rem; color: var(--color-text-secondary); margin-bottom: 1rem;">
+                A collection of practice projects and exercises while learning web development fundamentals. 
+                Includes landing pages, forms, and responsive layouts.
+              </p>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <a href="https://github.com/ROMEO-AKATEH/web-dev-practice" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;" target="_blank" rel="noopener">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Placeholder: Future Work -->
+          <article class="cert-card cert-card--placeholder">
+            <div class="cert-body" style="width: 100%;">
+              <h4 class="cert-title">More Projects Coming Soon...</h4>
+              <p class="cert-issuer" style="margin-bottom: 0.75rem;">In Development</p>
+              <p style="font-size: 0.9375rem; color: var(--color-text-secondary);">
+                I'm constantly learning and building. Check back soon for more projects, or follow me on 
+                GitHub to see what I'm working on!
+              </p>
+            </div>
+          </article>
+
+        </div>
+        <!-- End Projects Grid -->
+
+        <!-- Back to Home CTA -->
+        <div style="margin-top: var(--space-3xl); text-align: center;">
+          <a href="index.html" class="btn btn-primary btn-large">
+            <span>← Back to Home</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="year">2025</span> · ROMEO AKATEH ALEMNKIA · Landmark University
+      </p>
+
+      <!-- Social icon row in footer -->
+      <nav class="footer-socials" aria-label="Social media links">
+        <a href="https://github.com/ROMEO-AKATEH" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.505.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.338c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/romeo-akateh-alemnkia" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://twitter.com/romeo_akateh" target="_blank" rel="noopener" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        </a>
+        <a href="mailto:romeoakateh5@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Auto-update copyright year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
