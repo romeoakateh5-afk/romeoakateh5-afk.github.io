@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of a Level 200 Software Engineering student at Landmark University." />
+  <title>Portfolio | Software Engineering · Landmark University</title>
+ 
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+ 
+  <!-- External Stylesheet (Separation of Concerns) -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+ 
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <span class="nav-logo">Romeo<span class="accent">.</span>dev</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume" class="nav-cta">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+ 
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+ 
+      <div class="hero-content">
+        <!-- Profile Photo -->
+        <div class="profile-photo-wrapper">
+          <img
+            src="pic.png"
+            alt="[Your Name] - Software Engineering Student"
+            class="profile-photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <!-- Fallback avatar shown if profile.jpg is missing -->
+          <div class="profile-fallback" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+        </div>
+ 
+        <div class="hero-text">
+          <p class="hero-label">Level 200 · Software Engineering</p>
+          <h1 class="hero-name">ROMEO AKATEH ALEMNKIA</h1>
+          <p class="hero-tagline">Building tomorrow's systems, one line at a time.</p>
+          <p class="hero-institution">
+            <span class="badge">Landmark University . Cameroon</span>
+            <span class="badge">From Buea, Cameroon</span>
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">Get to Know Me</a>
+            <a href="Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download CV</a>
+          </div>
+ 
+          <!-- Social handles — quick access from hero -->
+          <div class="hero-socials">
+            <a href="https://github.com/ROMEO-AKATEH" class="social-pill" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.505.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.338c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/romeo-akateh-alemnkia" class="social-pill" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://twitter.com/Romeo Aketeh" class="social-pill" target="_blank" rel="noopener" aria-label="Twitter / X">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+              Twitter
+            </a>
+            <a href="mailto:romeoakateh5@gmail.com" class="social-pill" aria-label="Email">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Decorative bottom border -->
+      <div class="hero-divider" aria-hidden="true"></div>
+    </section>
+ 
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="about section-pad" id="about">
+      <div class="container">
+        <div class="section-label">01 · About Me</div>
+        <h2 class="section-title">Who I Am</h2>
+ 
+        <div class="about-grid">
+          <article class="about-bio">
+            <p>
+              I am a dedicated <strong>Level 200 Software Engineering student</strong> at
+              <strong>Landmark University</strong>, Buea Cameroon, one of Cameroom's
+              leading private research universities. My academic journey is rooted in a
+              deep passion for building reliable, scalable, and human-centred software systems.
+            </p>
+            <p>
+              My coursework spans the full lifecycle of software development: from low-level
+              systems programming in <strong>C</strong> to web interface design with
+              <strong>HTML &amp; CSS</strong>. I embrace the university's motto,
+              <em>"Producing Productive Leaders,"</em> by approaching every project with both
+              technical rigour and an entrepreneurial mindset.
+            </p>
+            <p>
+              Outside the classroom, I am actively building my foundation in algorithms,
+              data structures, and software design principles — preparing for a career
+              at the intersection of innovation and impact.
+            </p>
+          </article>
+ 
+          <!-- Quick-stat cards -->
+          <aside class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">200</span>
+              <span class="stat-desc">Level · Year </span>
+            </div>
+            <div class="stat-card">
+              <a href="project.html"><span class="stat-number">3+</span></a>
+              <span class="stat-desc">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">LMU</span>
+              <span class="stat-desc">Landmark University</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">∞</span>
+              <span class="stat-desc">Curiosity</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section class="skills section-pad" id="skills">
+      <div class="container">
+        <div class="section-label">02 · Technical Skills</div>
+        <h2 class="section-title">My Tech Stack</h2>
+        <p class="section-subtitle">Proficiency levels reflect honest self-assessment as a Level 200 student.</p>
+ 
+        <!-- Skills Matrix (Progress Bars) -->
+        <div class="skills-matrix">
+ 
+          <!-- HTML5: 50% -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">
+                <span class="skill-icon" aria-hidden="true">⟨/⟩</span>
+                HTML5
+              </span>
+              <span class="skill-percent">50%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency: 50%">
+              <div class="progress-fill" style="--fill: 50%;"></div>
+            </div>
+            <p class="skill-note">Semantic markup, forms, accessibility basics</p>
+          </div>
+ 
+          <!-- CSS3: 40% -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">
+                <span class="skill-icon" aria-hidden="true">#</span>
+                CSS3
+              </span>
+              <span class="skill-percent">40%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency: 40%">
+              <div class="progress-fill" style="--fill: 40%;"></div>
+            </div>
+            <p class="skill-note">Flexbox, Grid, custom properties, responsive design</p>
+          </div>
+ 
+          <!-- C Programming: 40% -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">
+                <span class="skill-icon" aria-hidden="true">C</span>
+                C Programming
+              </span>
+              <span class="skill-percent">40%</span>
+            </div>
+            <div class="progress-track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="C Programming proficiency: 40%">
+              <div class="progress-fill" style="--fill: 40%;"></div>
+            </div>
+            <p class="skill-note">Variables, control flow, functions, pointers</p>
+          </div>
+ 
+        </div>
+        <!-- End Skills Matrix -->
+      </div>
+    </section>
+ 
+    <!-- ===================== DOCUMENTATION SECTION ===================== -->
+    <section class="documentation section-pad" id="certifications">
+      <div class="container">
+        <div class="section-label">03 · Documentation</div>
+        <h2 class="section-title">Certifications &amp; Resume</h2>
+ 
+        <!-- ---- Certifications Grid ---- -->
+        <h3 class="subsection-title">Certifications</h3>
+        <div class="cert-grid">
+ 
+          <!-- Certification Card 1 -->
+          <article class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🏅</div>
+            <div class="cert-body">
+              <h4 class="cert-title">Ordinary Level</h4>
+              <p class="cert-issuer">Kotto Mission</p>
+              <time class="cert-date" datetime="2024-01">june 2023</time>
+            </div>
+          </article>
+ 
+          <!-- Certification Card 2 -->
+          <article class="cert-card">
+            <div class="cert-icon" aria-hidden="true">🏅</div>
+            <div class="cert-body">
+              <h4 class="cert-title">Advance Level</h4>
+              <p class="cert-issuer">Kotto Mission</p>
+              <time class="cert-date" datetime="2024-03">June 2025</time>
+            </div>
+          </article>
+ 
+          <!-- Certification Card 3 (placeholder) -->
+          <article class="cert-card cert-card--placeholder">
+            <div class="cert-icon" aria-hidden="true">＋</div>
+            <div class="cert-body">
+              <h4 class="cert-title">Your Next Certification</h4>
+              <p class="cert-issuer">Issuer · Platform</p>
+              <time class="cert-date">Month Year</time>
+            </div>
+          </article>
+ 
+        </div>
+        <!-- End Certifications Grid -->
+ 
+        <!-- ---- Resume CTA ---- -->
+        <div class="resume-cta" id="resume">
+          <div class="resume-cta-text">
+            <h3>Want the full picture?</h3>
+            <p>Download my résumé for a complete overview of my academic record, projects, and achievements.</p>
+          </div>
+          <a href="Resume.pdf" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+            <span>Download Résumé</span>
+            <span class="btn-arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="contact section-pad" id="contact">
+      <div class="container">
+        <div class="section-label">04 · Contact</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          I am open to collaborations, internships, and learning opportunities.
+          Reach out through any of the channels below — I typically respond within 24 hours.
+        </p>
+ 
+        <div class="contact-layout">
+ 
+          <!-- ---- Contact Info Cards ---- -->
+          <div class="contact-cards">
+ 
+            <a href="mailto:romeoakateh5@gmail.com" class="contact-card" aria-label="Send an email">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">romeoakateh5@gmail.com</span>
+              </div>
+            </a>
+ 
+            <a href="https://linkedin.com/in/romeo-akateh-alemnkia" class="contact-card" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">linkedin.com/in/romeo-akateh-alemnkia</span>
+              </div> 
+            </a>
+ 
+            <a href="https://github.com/ROMEO-AKATEH" class="contact-card" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.505.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.338c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">github.com/ROMEO-AKATEH</span>
+              </div>
+            </a>
+ 
+            <a href="https://wa.me/237679564635" class="social-pill" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  WhatsApp
+  <div class="contact-card-body">
+                <span class="contact-card-label">WhatsApp</span>
+                <span class="contact-card-value">+237 679 564 635</span>
+              </div>
+</a>
+           
+          <!-- End Contact Cards -->
+ 
+          <!-- ---- Location & Availability ---- -->
+          <aside class="contact-availability">
+            <div class="avail-header">
+              <span class="avail-dot" aria-hidden="true"></span>
+              <span class="avail-status">Available for Opportunities</span>
+            </div>
+            <p class="avail-body">
+              Currently studying at <strong>Landmark University</strong>, Buea-Cameroon,
+              Cameroon. Originally from Buea, Cameroon. Open to remote collaborations, internships,
+              and student developer programmes worldwide.
+            </p>
+            <div class="avail-tags">
+              <span class="avail-tag">Internships</span>
+              <span class="avail-tag">Open Source</span>
+              <span class="avail-tag">Mentorship</span>
+              <span class="avail-tag">Hackathons</span>
+            </div>
+          </aside>
+ 
+        </div>
+        <!-- End Contact Layout -->
+ 
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="year">2025</span> · ROMEO AKATEH ALEMNKIA · Landmark University
+      </p>
+ 
+      <!-- Social icon row in footer -->
+      <nav class="footer-socials" aria-label="Social media links">
+        <a href="https://github.com/ROMEO-AKATEH" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.505.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.338c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/romeo-akateh-alemnkia" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://twitter.com/romeo_akateh" target="_blank" rel="noopener" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        </a>
+        <a href="mailto:romeoakateh5@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+      </nav>
+ 
+     
+    </div>
+  </footer>
+ 
+  <!-- Auto-update copyright year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+ 
+</body>
+</html>
