@@ -26,6 +26,12 @@
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#resume" class="nav-cta">Resume</a></li>
+        <!-- Theme Toggle Button -->
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+            <!-- Icon will be added by JavaScript -->
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -56,7 +62,7 @@
           <h1 class="hero-name">ROMEO AKATEH ALEMNKIA</h1>
           <p class="hero-tagline">Building tomorrow's systems, one line at a time.</p>
           <p class="hero-institution">
-            <span class="badge">Landmark University . Cameroon</span>
+            <span class="badge">Landmark University · Cameroon</span>
             <span class="badge">From Buea, Cameroon</span>
           </p>
           <div class="hero-actions">
@@ -74,7 +80,7 @@
               <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               LinkedIn
             </a>
-            <a href="https://twitter.com/Romeo Aketeh" class="social-pill" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <a href="https://twitter.com/romeo_akateh" class="social-pill" target="_blank" rel="noopener" aria-label="Twitter / X">
               <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
               Twitter
             </a>
@@ -100,14 +106,14 @@
           <article class="about-bio">
             <p>
               I am a dedicated <strong>Level 200 Software Engineering student</strong> at
-              <strong>Landmark University</strong>, Buea Cameroon, one of Cameroon's
+              <strong>Landmark University</strong>, Buea-Cameroon -one of Cameroon's
               leading private research universities. My academic journey is rooted in a
               deep passion for building reliable, scalable, and human-centred software systems.
             </p>
             <p>
               My coursework spans the full lifecycle of software development: from low-level
               systems programming in <strong>C</strong> to web interface design with
-              <strong>HTML &amp; CSS</strong>. I embrace the university's motto,
+              <strong>HTML &amp; CSS</strong>. I embrace our university's motto,
               <em>"Producing Productive Leaders,"</em> by approaching every project with both
               technical rigour and an entrepreneurial mindset.
             </p>
@@ -160,7 +166,7 @@
               </span>
               <span class="skill-percent">50%</span>
             </div>
-            <div class="progress-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="HTML proficiency: 50%">
+            <div class="progress-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency: 50%">
               <div class="progress-fill" style="--fill: 50%;"></div>
             </div>
             <p class="skill-note">Semantic markup, forms, accessibility basics</p>
@@ -175,7 +181,7 @@
               </span>
               <span class="skill-percent">40%</span>
             </div>
-            <div class="progress-track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="CSS proficiency: 40%">
+            <div class="progress-track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency: 40%">
               <div class="progress-fill" style="--fill: 40%;"></div>
             </div>
             <p class="skill-note">Flexbox, Grid, custom properties, responsive design</p>
@@ -322,8 +328,8 @@
               <span class="avail-status">Available for Opportunities</span>
             </div>
             <p class="avail-body">
-              Currently studying at <strong>Landmark University</strong>, Buea-Cameroon,
-              Cameroon.  Open to remote collaborations, internships,
+              Currently studying at <strong>Landmark University</strong>,
+              Buea, Cameroon.  Am Open to remote collaborations, internships,
               and student developer programmes worldwide.
             </p>
             <div class="avail-tags">
@@ -369,10 +375,8 @@
     </div>
   </footer>
  
-  <!-- Auto-update copyright year -->
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- Theme Toggle Script -->
+  <script src="theme-toggle.js"></script>
  
 </body>
 </html>
