@@ -67,6 +67,59 @@
   --gradient-accent: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
 }
 
+/* ===================== LIGHT MODE THEME ===================== */
+
+[data-theme="light"] {
+  /* === Color Palette: Clean Light with Emerald Accent === */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-bg-tertiary: #f1f5f9;
+  --color-bg-elevated: #e2e8f0;
+  
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #334155;
+  --color-text-muted: #64748b;
+  
+  --color-accent-primary: #10b981;
+  --color-accent-secondary: #059669;
+  --color-accent-light: #34d399;
+  
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-hover: rgba(0, 0, 0, 0.2);
+  
+  /* === Shadows === */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* === Gradients === */
+  --gradient-hero: linear-gradient(135deg, 
+    rgba(16, 185, 129, 0.08) 0%, 
+    rgba(5, 150, 105, 0.04) 50%, 
+    transparent 100%);
+}
+
+/* Smooth color transitions */
+* {
+  transition: background-color var(--transition-base), 
+              border-color var(--transition-base),
+              color var(--transition-base);
+}
+
+/* Light mode adjustments */
+[data-theme="light"] .profile-photo-wrapper::before {
+  opacity: 0.8;
+}
+
+[data-theme="light"] body::before {
+  opacity: 0.2;
+}
+
+[data-theme="light"] .hero-bg-grid {
+  opacity: 0.4;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -1181,4 +1234,42 @@ button:focus-visible {
   .section-pad {
     padding: 1rem 0;
   }
+}
+
+/* ===================== THEME TOGGLE BUTTON ===================== */
+
+.theme-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  background: var(--color-bg-elevated);
+  border-color: var(--color-accent-primary);
+  transform: rotate(15deg);
+}
+
+.theme-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-accent-primary);
+  transition: transform var(--transition-base);
+}
+
+.theme-toggle:hover svg {
+  transform: scale(1.1);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--color-accent-primary);
+  outline-offset: 2px;
 }
